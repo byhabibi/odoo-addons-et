@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_nav_plc_info" inherit_id="web.navbar">
+        <xpath expr="//div[hasclass('o_menu_brand')]" position="after">
+            <div class="d-flex align-items-center ms-3 border-start ps-3" style="color: white; font-size: 0.9rem;">
+                <div class="me-3">
+                    <span class="fw-bold" style="color: #FFD700;">MP:</span> 
+                    <span id="plc_mp_value">-</span>
+                </div>
+                <div>
+                    <span class="fw-bold" style="color: #FFD700;">Shift:</span> 
+                    <span id="plc_shift_value">-</span>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
