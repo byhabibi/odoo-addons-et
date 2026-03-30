@@ -5,10 +5,10 @@
         <field name="name">plc.data.list</field>
         <field name="model">plc.data</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="counter"/>
                 <field name="timestamp"/>
-            </list>
+            </tree>
         </field>
     </record>
 
