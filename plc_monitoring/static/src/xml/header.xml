@@ -1,0 +1,10 @@
+<templates xml:space="preserve">
+    <t t-name="plc_monitoring.PlcHeader">
+        <div class="o_systray_item" style="color:white; padding:0 15px;">
+            <strong>MP:</strong> <t t-esc="state.mp"/>
+            <span style="margin-left:10px;">
+                <strong>Shift:</strong> <t t-esc="state.shift"/>
+            </span>
+        </div>
+    </t>
+</templates>

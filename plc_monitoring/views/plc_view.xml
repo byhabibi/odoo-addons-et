@@ -1,0 +1,102 @@
+<odoo>
+
+    <!-- LIST VIEW -->
+    <record id="view_plc_data_list" model="ir.ui.view">
+        <field name="name">plc.data.list</field>
+        <field name="model">plc.data</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="counter"/>
+                <field name="timestamp"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_plc_data_form" model="ir.ui.view">
+        <field name="name">plc.data.form</field>
+        <field name="model">plc.data</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="counter"/>
+                        <field name="timestamp"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Serch View -->
+    <record id="view_plc_data_search" model="ir.ui.view">
+        <field name="name">plc.data.search</field>
+        <field name="model">plc.data</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="counter"/>
+                <field name="timestamp"/>
+
+                <separator/>
+
+                <group string="MP">
+                    <filter name="mp1" string="MP 1" domain="[]"/>
+                    <filter name="mp2" string="MP 2" domain="[]"/>
+                </group>
+
+                <group string="Shift">
+                    <filter name="shift1" string="Shift 1" domain="[]"/>
+                    <filter name="shift2" string="Shift 2" domain="[]"/>
+                </group>
+
+                <separator/>
+
+                <filter name="group_by_minute"
+                        string="Minute"
+                        context="{'group_by':'timestamp:minute'}"/>
+
+                <filter name="group_by_hour"
+                        string="Hour"
+                        context="{'group_by':'timestamp:hour'}"/>
+
+                <filter name="group_by_day"
+                        string="Day"
+                        context="{'group_by':'timestamp:day'}"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- GRAPH VIEW -->
+    <record id="view_plc_data_graph" model="ir.ui.view">
+        <field name="name">plc.data.graph</field>
+        <field name="model">plc.data</field>
+        <field name="arch" type="xml">
+            <graph string="Production Counter" type="line">
+                <field name="id" type="measure"/>
+                <field name="timestamp" type="row"/>
+                <!-- <field name="counter" type="measure"/> -->
+            </graph>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_plc_data" model="ir.actions.act_window">
+        <field name="name">Mesin Manual Bending</field>
+        <field name="res_model">plc.data</field>
+        <field name="view_mode">list,form,graph</field>
+        <field name="search_view_id" ref="view_plc_data_search"/>
+    </record>
+
+    <!-- MENU -->
+    <menuitem id="menu_plc_root" name="Production Counter" sequence="10"/>
+
+    <menuitem id="menu_plc_data"
+              name="Nama MP"
+              parent="menu_plc_root"
+              action="plc_monitoring.action_plc_data"/>
+
+    <menuitem id="menu_mesin_data"
+              name="Shift MP"
+              parent="menu_plc_root"
+              action="plc_monitoring.action_plc_data"/>  
+</odoo>
