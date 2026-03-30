@@ -90,13 +90,20 @@
     <!-- MENU -->
     <menuitem id="menu_plc_root" name="Production Counter" sequence="10"/>
 
-    <menuitem id="menu_plc_data"
-              name="Nama MP"
-              parent="menu_plc_root"
-              action="plc_monitoring.action_plc_data"/>
+    <menuitem id="menu_plc_root" 
+              name="Production Counter" 
+              sequence="10"/>
 
-    <menuitem id="menu_mesin_data"
-              name="Shift MP"
-              parent="menu_plc_root"
-              action="plc_monitoring.action_plc_data"/>  
+    <menuitem id="menu_plc_group_product" 
+              name="Group Product" 
+              parent="menu_plc_root" 
+              sequence="10"/>
+
+    <menuitem id="menu_plc_manual_bending"
+              name="Manual Bending"
+              parent="menu_plc_group_product"
+              action="action_plc_data"
+              sequence="10"/> 
+
+    
 </odoo>

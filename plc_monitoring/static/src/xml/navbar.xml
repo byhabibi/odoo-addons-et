@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="plc_monitoring.PlcHeader" owl="1">
+        <div class="d-flex align-items-center px-3 border-start" style="color: white; font-size: 0.85rem;">
+            <div class="me-2">
+                <span class="fw-bold text-warning">MP:</span> 
+                <span t-out="state.mp"/>
+            </div>
+            <div>
+                <span class="fw-bold text-warning">Shift:</span> 
+                <span t-out="state.shift"/>
+            </div>
+        </div>
+    </t>
+</templates>

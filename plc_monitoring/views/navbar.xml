@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="portal_nav_plc_info" inherit_id="web.navbar">
+    <template id="portal_nav_plc_info" inherit_id="web.Navbar">
         <xpath expr="//ul[hasclass('o_menu_sections')]" position="before">
-            <div class="d-flex align-items-center ms-3 border-start ps-3" style="color: white; font-size: 0.9rem; height: 100%;">
+            <div class="d-flex align-items-center ms-3 border-start ps-3" 
+                 style="color: white; font-size: 0.9rem; height: 100%;">
                 <div class="me-3">
                     <span class="fw-bold" style="color: #FFD700;">MP:</span> 
-                    <span id="plc_mp_value">-</span>
+                    <span t-out="plcState.mp"/>
                 </div>
                 <div>
                     <span class="fw-bold" style="color: #FFD700;">Shift:</span> 
-                    <span id="plc_shift_value">-</span>
+                    <span t-out="plcState.shift"/>
                 </div>
             </div>
         </xpath>
     </template>
-</odoo>
+</odoo> -->
