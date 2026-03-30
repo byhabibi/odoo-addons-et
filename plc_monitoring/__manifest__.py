@@ -12,9 +12,9 @@
     'application': True,
     'assets': {
         'web.assets_backend': [
-            '/plc_monitoring/static/src/js/header_patch.js',
-            '/plc_monitoring/static/src/xml/header.xml',
-            '/plc_monitoring/static/src/js/auto_refresh.js',
+            'plc_monitoring/static/src/js/header_patch.js',
+            'plc_monitoring/static/src/xml/header.xml',
+            'plc_monitoring/static/src/js/auto_refresh.js',
         ],
     }, 
 }
