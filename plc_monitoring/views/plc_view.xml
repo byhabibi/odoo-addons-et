@@ -12,7 +12,7 @@
                             <a href="/web#action=action_plc_data">View Counter</a>
                         </div>
                         <div class="o_card">
-                            <h2>Nut Former</h2>
+                            <h2>Line Nut Former</h2>
                             <p>Description or additional info about NF.</p>
                         </div>
                         <div class="o_card">
@@ -20,7 +20,7 @@
                             <p>Description or additional info about NC.</p>
                         </div>
                         <div class="o_card">
-                            <h2>Spot Welding</h2>
+                            <h2>Line Spot Welding</h2>
                             <p>Description or additional info about Spot Welding.</p>
                         </div>
                     </group>
