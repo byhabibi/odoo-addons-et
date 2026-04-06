@@ -8,15 +8,15 @@
                 <sheet>
                     <group>
                         <div class="o_card">
-                            <h2>Line Stay</h2>
+                            <h2>Line Stay Manual Bending</h2>
                             <button type="object" name="action_open_line_stay" string="View" class="btn btn-primary"/>
                         </div>
                         <div class="o_card">
-                            <h2>NF</h2>
+                            <h2>NF ALL</h2>
                             <button type="object" name="action_open_nf" string="View" class="btn btn-primary"/>
                         </div>
                         <div class="o_card">
-                            <h2>NC</h2>
+                            <h2>Line NC</h2>
                             <button type="object" name="action_open_nc" string="View" class="btn btn-primary"/>
                         </div>
                         <div class="o_card">

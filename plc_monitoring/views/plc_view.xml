@@ -43,5 +43,5 @@
               action="action_base_production_counter" 
               sequence="10"/>
 
-    <!---->
+    <!-- Testing Github Action -->
 </odoo>
