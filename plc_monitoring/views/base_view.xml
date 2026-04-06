@@ -1,0 +1,63 @@
+<odoo>
+    <!-- BASE VIEW -->
+    <record id="view_base_production_counter" model="ir.ui.view">
+        <field name="name">base.production.counter</field>
+        <field name="model">ir.ui.view</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <div class="o_card">
+                            <h2>Line Stay</h2>
+                            <button type="object" name="action_open_line_stay" string="View" class="btn btn-primary"/>
+                        </div>
+                        <div class="o_card">
+                            <h2>NF</h2>
+                            <button type="object" name="action_open_nf" string="View" class="btn btn-primary"/>
+                        </div>
+                        <div class="o_card">
+                            <h2>NC</h2>
+                            <button type="object" name="action_open_nc" string="View" class="btn btn-primary"/>
+                        </div>
+                        <div class="o_card">
+                            <h2>Spot Welding</h2>
+                            <button type="object" name="action_open_spot_welding" string="View" class="btn btn-primary"/>
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ACTIONS -->
+    <record id="action_open_line_stay" model="ir.actions.act_window">
+        <field name="name">Line Stay</field>
+        <field name="res_model">plc.data</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="search_view_id" ref="view_plc_data_search"/>
+    </record>
+
+    <record id="action_open_nf" model="ir.actions.act_window">
+        <field name="name">NF</field>
+        <field name="res_model">plc.data</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="search_view_id" ref="view_plc_data_search"/>
+    </record>
+
+    <record id="action_open_nc" model="ir.actions.act_window">
+        <field name="name">NC</field>
+        <field name="res_model">plc.data</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="search_view_id" ref="view_plc_data_search"/>
+    </record>
+
+    <record id="action_open_spot_welding" model="ir.actions.act_window">
+        <field name="name">Spot Welding</field>
+        <field name="res_model">plc.data</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="search_view_id" ref="view_plc_data_search"/>
+    </record>
+
+    <!-- MENU -->
+    <menuitem id="menu_base_production_counter" name="Production Counter" sequence="10"/>
+</odoo>
