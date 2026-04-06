@@ -42,4 +42,6 @@
               name="Production Counter" 
               action="action_base_production_counter" 
               sequence="10"/>
+
+    <!---->
 </odoo>
