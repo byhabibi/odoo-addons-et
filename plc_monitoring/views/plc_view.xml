@@ -12,11 +12,11 @@
                             <a href="/web#action=action_plc_data">View Counter</a>
                         </div>
                         <div class="o_card">
-                            <h2>NF</h2>
+                            <h2>Nut Former</h2>
                             <p>Description or additional info about NF.</p>
                         </div>
                         <div class="o_card">
-                            <h2>NC</h2>
+                            <h2>Line NC</h2>
                             <p>Description or additional info about NC.</p>
                         </div>
                         <div class="o_card">
